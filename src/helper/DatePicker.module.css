@@ -1,0 +1,64 @@
+/* DatePicker.module.css */
+.datePickerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Customizing the header with month/year and arrows */
+  .react-datepicker__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: none;
+  }
+  
+  /* Place both arrows side by side on the left */
+  .arrowContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .react-datepicker__navigation--previous {
+    margin-right: 5px;
+  }
+  
+  .react-datepicker__navigation--next {
+    margin-left: 5px;
+  }
+  
+  /* Align month and year to the right */
+  .react-datepicker__current-month {
+    margin-left: auto;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  /* Styles for the footer buttons */
+  .datePickerFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .todayButton, .clearButton {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .todayButton:hover, .clearButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for formatted date display */
+  .formattedDate {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
