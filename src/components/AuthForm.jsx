@@ -93,7 +93,7 @@ function AuthForm() {
             </div>
             <div className={styles.inputbox}>
                 <CiLock className={styles.inputicon}/>
-            <input className={errors.password && styles.inputerror} type="text" name='password' placeholder='Password' value={formdata.password} onChange={handlechange} required/>
+            <input className={errors.password && styles.inputerror} type="text" name='password' placeholder='Password' value={formdata.password} onChange={handlechange} />
             {errors.password && <span className={styles.error}>{errors.password}</span>}
             </div>
             {!isLogin && <div className={styles.inputbox}>
