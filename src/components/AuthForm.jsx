@@ -100,13 +100,13 @@ function AuthForm() {
             <CiLock className={styles.inputicon}/>
                 <input className={errors.confirmpassword && styles.inputerror} type="text" name="confirmpassword" placeholder='Confim Password' value={formdata.confirmpassword} onChange={handlechange} />
                 {errors.confirmpassword && <span className={styles.error}>{errors.confirmpassword}</span>}
+        {errors.server && <span className={styles.error}>{errors.server}</span>}
             </div> }
         <button type='submit' >{isLogin ? "Login" : "Register"}</button>
         <p>{isLogin ? "Have no account yet?" : "Have an account ?"}</p>
         <button className={styles.btn} type='button' onClick={()=>{setIsLogin(!isLogin,cleardata(),
             setErrors({}))}}>{isLogin ? "Register" : "Login"}</button>
         </form>
-        {errors.server && <span className={styles.error}>{errors.server}</span>}
     </div>
   )
 }
